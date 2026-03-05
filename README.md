@@ -14,4 +14,4 @@ Portfólio pessoal single-page com navegação por âncoras, contendo as seçõe
 
 ## Acesse em:
 
-🔗 [varmundt.github.io/portfolio-varmundt](https://varmundt.github.io/MauricioMiller)
+🔗 [varmundt.github.io/MauricioMiller](https://varmundt.github.io/MauricioMiller)
