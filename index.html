@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <title>Portfólio Mauricio Miller Oliveira</title>
+
+  <!-- FONTES -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=DM+Mono:wght@300;400;500&display=swap" rel="stylesheet" />
+
+</head>
+<body>
+
+  <!--NAVBAR FIXA -->
+  <nav>
+    <span class="nav-logo">Mau Miller</span>
+
+    <!-- Links de âncora para cada seção -->
+    <ul class="nav-links">
+      <li><a href="#sobre">Sobre mim</a></li>
+      <li><a href="#formacao">Formação</a></li>
+      <li><a href="#portfolio">Portfólio</a></li>
+      <li><a href="#contato">Contato</a></li>
+    </ul>
+
+    <!-- Botão para alternar entre tema claro e escuro -->
+    <button id="theme-toggle" aria-label="Alternar tema">◐ Tema</button>
+
+    <!-- Botão hamburger exibido apenas em dispositivos móveis -->
+    <button class="hamburger" id="hamburger" aria-label="Abrir menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- Menu mobile com os links âncora -->
+  <div class="mobile-menu" id="mobile-menu">
+    <a href="#sobre"     onclick="closeMobileMenu()">Sobre mim</a>
+    <a href="#formacao"  onclick="closeMobileMenu()">Formação</a>
+    <a href="#portfolio" onclick="closeMobileMenu()">Portfólio</a>
+    <a href="#contato"   onclick="closeMobileMenu()">Contato</a>
+  </div>
+
+  <main>
+    <!--SEÇÃO 1 — SOBRE MIM-->
+    <section id="sobre">
+      <p class="section-label reveal">01 — Sobre mim</p>
+      <p class="hero-intro reveal">Olá, eu sou</p>
+      <h1 class="reveal">Mauricio<br><em>Miller Oliveira</em></h1>
+
+      <!-- Subtítulo -->
+      <p class="reveal" style="font-size:0.8rem;letter-spacing:0.08em;text-transform:uppercase;color:var(--muted);margin-bottom:0.5rem;">
+        Desenvolvedor FullStack &middot; Analista Junior
+      </p>
+
+      <!-- Descrição pessoal -->
+      <p class="hero-desc reveal">
+        Um Jovem Estudante de Análise e Desenvolvimento de Sistemas, Gaúcho e apaixonado por tecnologia e motores. Sou Fullstack mas meu foco é o BackEnd utilizando C# e .NET e atualmente trabalho como Analista Junior!
+      </p>
+
+      <!-- Tags das principais tecnologias e interesses -->
+      <div class="tags reveal">
+        <span class="tag">Programar</span>
+        <span class="tag">Jogar</span>
+        <span class="tag">Pilotar</span>
+        <span class="tag">Leitura</span>
+        <span class="tag">Musculação</span>
+      </div>
+
+      <!-- Links rápidos para redes e contato -->
+      <div class="hero-links reveal">
+        <a href="https://linkedin.com/in/maumiller" class="hero-link" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="https://github.com/Varmundt" class="hero-link" target="_blank" rel="noopener">GitHub</a>
+        <a href="mailto:mauriciomilleroliveira@hotmail.com" class="hero-link">E-mail</a>
+        <a href="https://varmundt.github.io/curriculum-vitae/" class="hero-link" target="_blank" rel="noopener">Currículo</a>
+      </div>
+    </section>
+
+    <!--SEÇÃO 2 — FORMAÇÃO-->
+    <section id="formacao">
+      <p class="section-label reveal">02 — Formação</p>
+      <h2 class="reveal">Educação &amp;<br>Habilidades</h2>
+
+      <!-- Histórico educacional e profissional-->
+      <div class="education-list">
+
+        <div class="edu-item reveal">
+          <span class="edu-year">Mai 2025 – ???</span>
+          <div class="edu-detail">
+            <h3>Tecnólogo em Análise e Desenvolvimento de Sistemas</h3>
+            <p>UNINTER — Centro Universitário Internacional</p>
+            <p class="edu-desc">
+              Desenvolvimento web (HTML5, CSS3, JavaScript), programação orientada a
+              objetos (Java, Python), banco de dados (SQL), Linux, design responsivo,
+              análise de requisitos e controle de versão.
+            </p>
+          </div>
+        </div>
+
+        <div class="edu-item reveal">
+          <span class="edu-year">Jul – Ago 2025 · 37h</span>
+          <div class="edu-detail">
+            <h3>Fundamentos do Power BI</h3>
+            <p>Fundação Bradesco — Certificação</p>
+            <p class="edu-desc">
+              Análise e modelagem de dados, Power Query, DAX, criação de dashboards
+              interativos e boas práticas de visualização de dados.
+            </p>
+          </div>
+        </div>
+
+        </div>
+
+      </div>
+
+      <!-- Habilidades técnicas -->
+      <div class="skills-block">
+        <p class="section-label">Habilidades Técnicas</p>
+        <div class="skills-grid">
+
+          <div class="skill-group reveal">
+            <p class="skill-group-title">Back-end</p>
+            <ul class="skill-list">
+              <li>C#</li>
+              <li>.NET 9 / ASP.NET</li>
+              <li>ASP.NET Web API</li>
+              <li>REST APIs</li>
+              <li>Python / Flask</li>
+              <li>MySQL / SQL</li>
+            </ul>
+          </div>
+
+          <div class="skill-group reveal">
+            <p class="skill-group-title">Front-end</p>
+            <ul class="skill-list">
+              <li>HTML5</li>
+              <li>CSS3</li>
+              <li>JavaScript</li>
+            </ul>
+          </div>
+
+          <div class="skill-group reveal">
+            <p class="skill-group-title">Ferramentas</p>
+            <ul class="skill-list">
+              <li>Git / GitHub</li>
+              <li>Linux</li>
+              <li>Power BI</li>
+              <li>VS Code</li>
+              <li>JetBrains Rider</li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Idiomas-->
+      <div class="lang-grid" style="margin-top:3.5rem;">
+        <p class="section-label" style="width:100%;margin-bottom:1.5rem;">Idiomas</p>
+
+        <div class="lang-item reveal">
+          <span class="lang-name">Português</span>
+          <div class="lang-bar"><div class="lang-fill" data-width="100"></div></div>
+          <span class="lang-level">Nativo</span>
+        </div>
+
+        <div class="lang-item reveal">
+          <span class="lang-name">Inglês</span>
+          <div class="lang-bar"><div class="lang-fill" data-width="85"></div></div>
+          <span class="lang-level">Avançado (C1)</span>
+        </div>
+
+        <div class="lang-item reveal">
+          <span class="lang-name">Japonês</span>
+          <div class="lang-bar"><div class="lang-fill" data-width="15"></div></div>
+          <span class="lang-level">Básico (N5)</span>
+        </div>
+
+        <div class="lang-item reveal">
+          <span class="lang-name">Espanhol</span>
+          <div class="lang-bar"><div class="lang-fill" data-width="20"></div></div>
+          <span class="lang-level">Básico (A1)</span>
+        </div>
+      </div>
+    </section>
+
+    <!--SEÇÃO 3 — PORTFÓLIO-->
+    <section id="portfolio">
+      <p class="section-label reveal">03 — Portfólio</p>
+      <h2 class="reveal">Projetos<br>no GitHub</h2>
+
+      <!-- Grid com projetos reais do github.com/Varmundt -->
+      <div class="projects-grid">
+
+        <div class="project-card reveal">
+          <span class="project-num">001</span>
+          <h3>Curriculum Vitae</h3>
+          <p>Portfólio pessoal publicado no GitHub Pages com design responsivo e suporte a múltiplos idiomas.</p>
+          <div class="project-tags">
+            <span class="project-tag">JavaScript</span>
+            <span class="project-tag">HTML5</span>
+            <span class="project-tag">CSS3</span>
+          </div>
+          <a href="https://varmundt.github.io/curriculum-vitae/" class="project-link" target="_blank" rel="noopener">Ver projeto →</a>
+        </div>
+
+        <div class="project-card reveal">
+          <span class="project-num">002</span>
+          <h3>Projeto Kaizen</h3>
+          <p>Aplicação interativa para aprendizado de Hiragana e Katakana de forma gamificada e progressiva.</p>
+          <div class="project-tags">
+            <span class="project-tag">JavaScript</span>
+            <span class="project-tag">HTML5</span>
+            <span class="project-tag">CSS3</span>
+          </div>
+          <a href="https://github.com/Varmundt/Projeto-Kaizen" class="project-link" target="_blank" rel="noopener">Ver repositório →</a>
+        </div>
+
+        <div class="project-card reveal">
+          <span class="project-num">003</span>
+          <h3>TodoList API</h3>
+          <p>API RESTful para gerenciamento de tarefas com autenticação JWT, construída com C# e ASP.NET Web API.</p>
+          <div class="project-tags">
+            <span class="project-tag">C#</span>
+            <span class="project-tag">ASP.NET</span>
+            <span class="project-tag">JWT</span>
+          </div>
+          <a href="https://github.com/Varmundt/TodoListAPI" class="project-link" target="_blank" rel="noopener">Ver repositório →</a>
+        </div>
+
+        <div class="project-card reveal">
+          <span class="project-num">004</span>
+          <h3>TodoList Front-End</h3>
+          <p>Interface front-end para o gerenciador de tarefas, consumindo a API REST desenvolvida com ASP.NET.</p>
+          <div class="project-tags">
+            <span class="project-tag">CSS3</span>
+            <span class="project-tag">HTML5</span>
+            <span class="project-tag">JavaScript</span>
+          </div>
+          <a href="https://github.com/Varmundt/Todo-List-FrontEnd" class="project-link" target="_blank" rel="noopener">Ver repositório →</a>
+        </div>
+
+      </div>
+    </section>
+
+    <!--SEÇÃO 4 — CONTATO-->
+    <section id="contato">
+      <p class="section-label reveal">04 — Contato</p>
+      <h2 class="reveal">Vamos<br>Conversar</h2>
+
+      <!-- Informações de contato direto -->
+      <div class="contact-info reveal">
+        <div class="contact-info-item">
+          <span class="contact-info-label">E-mail</span>
+          <a href="mailto:mauriciomilleroliveira@hotmail.com" class="contact-info-value">
+            mauriciomilleroliveira@hotmail.com
+          </a>
+        </div>
+        <div class="contact-info-item">
+          <span class="contact-info-label">Telefone</span>
+          <a href="tel:+5551989032545" class="contact-info-value">+55 51 98903-2545</a>
+        </div>
+        <div class="contact-info-item">
+          <span class="contact-info-label">Localização</span>
+          <span class="contact-info-value" style="cursor:default;">Guaíba — RS, Brasil</span>
+        </div>
+        <div class="contact-info-item">
+          <span class="contact-info-label">LinkedIn</span>
+          <a href="https://linkedin.com/in/maumiller" class="contact-info-value" target="_blank" rel="noopener">in/maumiller</a>
+        </div>
+      </div>
+
+      <!--Formulário de contato-->
+      <form class="contact-form reveal" id="contact-form" novalidate>
+
+        <div class="form-group">
+          <label for="nome">Nome</label>
+          <input type="text" id="nome" name="nome" placeholder="Seu nome completo" autocomplete="name" />
+          <span class="field-error" id="erro-nome">Por favor, informe seu nome.</span>
+        </div>
+
+        <div class="form-group">
+          <label for="email">E-mail</label>
+          <input type="email" id="email" name="email" placeholder="seu@email.com" autocomplete="email" />
+          <span class="field-error" id="erro-email">Informe um e-mail válido (ex: usuario@dominio.com).</span>
+        </div>
+
+        <div class="form-group">
+          <label for="mensagem">Mensagem</label>
+          <textarea id="mensagem" name="mensagem" rows="4" placeholder="Sua mensagem..."></textarea>
+          <span class="field-error" id="erro-mensagem">Por favor, escreva sua mensagem.</span>
+        </div>
+
+        <button type="submit" class="btn-submit">Enviar mensagem</button>
+      </form>
+    </section>
+  </main>
+
+  <!-- Rodapé -->
+  <footer>
+    <p>© 2025 Mauricio Miller Oliveira</p>
+    <p>HTML5 · CSS3 · JavaScript</p>
+  </footer>
+
+  <!--CONFIRMAÇÃO DE ENVIO DO FORMULÁRIO-->
+  <div class="modal-overlay" id="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+    <div class="modal-box">
+      <h3 id="modal-title">Mensagem enviada!</h3>
+      <p>Obrigado pelo contato. Mauricio responderá em breve.</p>
+      <button class="modal-close" id="modal-close">Fechar</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
